@@ -24,16 +24,16 @@ netdom query fsmo
 
 ==在普通DC上使用atexec执行名创建GPO的命令，会在PDC上生成一个日志，从下图中可以看到，该DC使用自己的机器账户到PDC上进行认证，因此无法创建GPO（DC的机器账户没有创建GPO的权限）==
 
-![1632282405521](005-GPP immediate task.assets/1632282405521.png)
+![1632282405521](https://github.com/wqreytuk/AD_GPO_EXEC/blob/main/005-GPP%20immediate%20task.assets/1632282405521.png)
 
-![1632282268464](005-GPP immediate task.assets/1632282268464.png)
+![1632282268464](https://github.com/wqreytuk/AD_GPO_EXEC/blob/main/005-GPP%20immediate%20task.assets/1632282268464.png)
 
 
 
 脚本：
 
 ```powershell
-C:\Users\x\Desktop\work\内部文库\no-sec\no-sec\library\09-横向移动\005-GPP immediate task.assets\cs.ps1
+C:\Users\x\Desktop\work\内部文库\no-sec\no-sec\library\09-横向移动\https://github.com/wqreytuk/AD_GPO_EXEC/blob/main/005-GPP%20immediate%20task.assets\cs.ps1
 ```
 
 
@@ -41,7 +41,7 @@ C:\Users\x\Desktop\work\内部文库\no-sec\no-sec\library\09-横向移动\005-G
 俄语版本
 
 ```
-C:\Users\x\Desktop\work\内部文库\no-sec\no-sec\no-sec\library\09-横向移动\005-GPP immediate task.assets\1.ps1
+C:\Users\x\Desktop\work\内部文库\no-sec\no-sec\no-sec\library\09-横向移动\https://github.com/wqreytuk/AD_GPO_EXEC/blob/main/005-GPP%20immediate%20task.assets\1.ps1
 ```
 
 注意：在俄语环境中使用该脚本的时候，不要使用任何编辑器打开该文件并保存，会导致实际运行时乱码
@@ -212,9 +212,9 @@ powershell -executionpolicy bypass -command "& { import-module C:\Path\To\cs.ps1
 
 当backup.xml中两个版本都为0的时候会导致创建出来的GPO设置为空，即使对应的文件夹中有相关设置
 
-![1631866662916](005-GPP immediate task.assets/1631866662916.png)
+![1631866662916](https://github.com/wqreytuk/AD_GPO_EXEC/blob/main/005-GPP%20immediate%20task.assets/1631866662916.png)
 
-![1631866787732](005-GPP immediate task.assets/1631866787732.png)
+![1631866787732](https://github.com/wqreytuk/AD_GPO_EXEC/blob/main/005-GPP%20immediate%20task.assets/1631866787732.png)
 
 最终导致客户端无法正常应用GPO设置完成既定的任务
 
@@ -254,7 +254,7 @@ Set-GPPermissions -Name $GPODisplayName -PermissionLevel None -TargetName "Пр�
 
 
 
-![1632198129856](005-GPP immediate task.assets/1632198129856.png)
+![1632198129856](https://github.com/wqreytuk/AD_GPO_EXEC/blob/main/005-GPP%20immediate%20task.assets/1632198129856.png)
 
 且Set-Gppermissions存在bug无法使用confirm选项跳过确认框，且未实现-force选项
 
@@ -341,4 +341,4 @@ Type help for list of commands
 
 等待目标主机更新组策略，即可上线：
 
-![1642409005686](005-GPP immediate task.assets/1642409005686.png)
+![1642409005686](https://github.com/wqreytuk/AD_GPO_EXEC/blob/main/005-GPP%20immediate%20task.assets/1642409005686.png)
