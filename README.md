@@ -163,7 +163,7 @@ xt -DeployArg sdf.exe }"
 
 
 
-![1631853561186](005-GPP immediate task.assets/1631853561186.png)
+![1631853561186](https://github.com/wqreytuk/AD_GPO_EXEC/blob/main/005-GPP%20immediate%20task.assets/1631853561186.png)
 
 
 
